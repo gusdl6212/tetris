@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Tetris</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class ="main-contents">
+      <style>
+        body {
+          background: #202028;
+          color: #fff;
+          font-family: sans-serif;
+          font-size: 2em;
+          text-align:center;
+        }
+        canvas {
+          border: solid .2em #fff;
+          height: 90vh;
+        }
+      </style>
+    </div>
+      <div id="side-contents" class="side-contents"> 
+        <Style> .start-button {
+          background-color: #227aec;
+          border: 2px solid #1d42e6;
+          color: #d7e5ff;
+          text-align: center;
+        
+      }
+      
+            .quit-button {
+          background-color: #e4a656;
+          border: 2px solid #d36a15;
+          color: #4e3513;
+          text-align: center;
+      }
+      
+            .pause-button {
+          background-color: #33ce24;
+          border: 2px solid #408d0d;
+          color: #194d09;
+          text-align: center;
+      }
+    </Style>
+    <p>
+        <button id="start-button" onclick="start()" class="start-button">게임 시작</button>
+    </p>
+    <p>
+        <button id="quit-button" onclick="quit()" class="quit-button">게임 종료</button>
+    </p>
+    <p>
+        <button id="pause-button" onclick="pause()" class="pause-button">일시 정지</button>
+    
+  </p>
+  </div>
+</div>
+    <div id="score"></div>
+    <canvas id="tetris" width="240" height="400" >
+    <script src="tetris.js"></script>
+    <script src="apq.js"></script>
+</body>
+</html>
